@@ -8,16 +8,16 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 import time
 import logging
 import datetime
+import pyautogui
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Salva o log de execução em arquivo para rastreio
-import datetime
 log_file = f"ssw_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
 file_handler = logging.FileHandler(log_file, encoding='utf-8')
 file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logging.getLogger().addHandler(file_handler)
-logging.info(f'Log de execução salvo em {log_file}')
+logging.info(f'Log salvo em {log_file}')
 
 # Configuração do Edge
 options = Options()
@@ -30,9 +30,6 @@ logging.info('Abrindo a página de login...')
 # Abre a página
 driver.get("https://sistema.ssw.inf.br/")
 
-logging.info('Aguardando campos de login ficarem disponíveis...')
-# Não é necessário clicar no checkbox para exibir os campos
-# Preenche os campos diretamente
 wait = WebDriverWait(driver, 30)
 wait.until(EC.presence_of_element_located((By.ID, "1")))  # Domínio
 wait.until(EC.presence_of_element_located((By.ID, "2")))  # CPF
@@ -130,74 +127,67 @@ try:
     btn_buscar.click()
     logging.info('Botão de busca clicado!')
 
-    # Não precisa mais aguardar a tela 101, pois será redirecionado para ocorrências
-    # Remove qualquer espera ou ação extra após clicar no botão de busca
-
-    # Tenta clicar no botão de ocorrências primeiro por ID, se não encontrar, tenta pelo XPath /html/body/form/a[17], garantindo que a janela de ocorrências seja aberta.
-    try:
-        logging.info('Aguardando botão "Ocorrências" (id=link_ocor)...')
-        btn_ocorrencias = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.ID, "link_ocor"))
-        )
-        logging.info('Botão "Ocorrências" encontrado por ID!')
-    except Exception:
-        logging.info('Botão "Ocorrências" por ID não encontrado, tentando por XPath /html/body/form/a[17]...')
-        btn_ocorrencias = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, "/html/body/form/a[17]"))
-        )
-        logging.info('Botão "Ocorrências" encontrado por XPath!')
-    logging.info('Clicando no botão "Ocorrências"...')
+    # Aguarda nova janela/aba após clicar no botão de busca
     handles_antes = set(driver.window_handles)
-    print(f'Janelas antes do clique: {len(handles_antes)}')
-    # Tenta executar o JavaScript do onclick diretamente, se existir
-    onclick = btn_ocorrencias.get_attribute("onclick")
-    if onclick:
-        driver.execute_script(onclick)
-        print('JavaScript do link "Ocorrências" executado diretamente!')
+    WebDriverWait(driver, 10).until(lambda d: len(d.window_handles) > len(handles_antes))
+    handles_depois = set(driver.window_handles)
+    novas = list(handles_depois - handles_antes)
+    if novas:
+        driver.switch_to.window(novas[0])
+        logging.info('Foco alterado para a janela de detalhe da nota!')
     else:
-        btn_ocorrencias.click()
-        print('Clique padrão executado (sem JavaScript customizado).')
+        logging.info('Nenhuma nova janela/aba foi aberta após clicar no botão de busca!')
 
-    # Aguarda até 10s para ver se uma nova janela foi aberta
+    # Salva o HTML da tela de detalhe da nota (nova janela)
+    with open('ssw_tela_detalhe_nota.html', 'w', encoding='utf-8') as f:
+        f.write(driver.page_source)
+    print('HTML da tela de detalhe da nota salvo em ssw_tela_detalhe_nota.html')
+
+    # --- Busca botão Ocorrências apenas pelo texto exato na tela de detalhes da nota ---
+    btn_ocorrencias = None
+    links = driver.find_elements(By.TAG_NAME, "a")
+    for link in links:
+        if link.text.strip().lower() == "ocorrências":
+            btn_ocorrencias = link
+            break
+    if not btn_ocorrencias:
+        print('Botão "Ocorrências" não encontrado na tela de detalhes da nota!')
+        input('Pressione Enter para encerrar e fechar o navegador...')
+        driver.quit()
+        exit()
+
+    handles_antes = set(driver.window_handles)
+    try:
+        btn_ocorrencias.click()
+        time.sleep(2)
+    except Exception as e:
+        driver.execute_script("arguments[0].scrollIntoView();", btn_ocorrencias)
+        time.sleep(1)
+        loc = btn_ocorrencias.location_once_scrolled_into_view
+        size = btn_ocorrencias.size
+        window_pos = driver.get_window_position()
+        window_x, window_y = window_pos['x'], window_pos['y']
+        click_x = window_x + loc['x'] + size['width'] // 2
+        click_y = window_y + loc['y'] + size['height'] // 2
+        pyautogui.moveTo(click_x, click_y, duration=0.5)
+        pyautogui.click()
+        time.sleep(2)
+    # Aguarda nova janela/aba
     try:
         WebDriverWait(driver, 10).until(lambda d: len(d.window_handles) > len(handles_antes))
         handles_depois = set(driver.window_handles)
-        print(f'Janelas depois do clique: {len(handles_depois)}')
-        nova_handle = list(handles_depois - handles_antes)[0]
-        driver.switch_to.window(nova_handle)
+        novas = list(handles_depois - handles_antes)
+        if not novas:
+            raise Exception('Nenhuma nova janela/aba foi aberta após clicar em Ocorrências!')
+        driver.switch_to.window(novas[0])
         print('Foco alterado para a janela de Ocorrências!')
         print(f'Título da janela de Ocorrências: {driver.title}')
-    except Exception:
-        print('Nenhuma nova janela detectada. Continuando na aba atual.')
-        print(f'Título da aba atual: {driver.title}')
+        with open('ssw_tela_ocorrencias.html', 'w', encoding='utf-8') as f:
+            f.write(driver.page_source)
+        print('HTML da tela de ocorrências salvo em ssw_tela_ocorrencias.html')
+    except Exception as e:
+        print('Nenhuma nova janela/aba foi aberta após clicar em Ocorrências!')
 
-    # NOVO: Listar todos os iframes após o clique em Ocorrências
-    print('\n--- Lista de iframes após clicar em Ocorrências ---')
-    iframes = driver.find_elements(By.TAG_NAME, 'iframe')
-    print(f'Total de iframes encontrados: {len(iframes)}')
-    for idx, iframe in enumerate(iframes):
-        try:
-            print(f'Iframe {idx}: name={iframe.get_attribute("name")}, id={iframe.get_attribute("id")}, src={iframe.get_attribute("src")}')
-        except Exception as e:
-            print(f'Iframe {idx}: erro ao acessar atributos ({e})')
-    print('-----------------------------------------------\n')
-
-    # Mostra todas as janelas/abas abertas e seus títulos
-    for idx, handle in enumerate(driver.window_handles):
-        try:
-            driver.switch_to.window(handle)
-            print(f'Aba {idx}: Título = {driver.title}')
-        except Exception as e:
-            print(f'Aba {idx}: Não foi possível acessar o título (janela pode ter sido fechada).')
-    # Garante o foco na última janela existente
-    try:
-        driver.switch_to.window(driver.window_handles[-1])
-        print('Foco garantido na última janela/aba!')
-        print(f'Título da janela/aba: {driver.title}')
-    except Exception:
-        print('Não foi possível garantir o foco na última janela/aba (todas podem ter sido fechadas).')
-
-    # Aguarda ação manual ou futura automação
     input('Pressione Enter para encerrar e fechar o navegador...')
     driver.quit()
 except Exception as e:
