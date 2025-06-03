@@ -8,11 +8,12 @@ var obj;var objfocus;var objmais;var help_file;var webTitle;
 function fl(){document.getElementById("aviso_resgate").href = "#";document.getElementById("aviso_resgate").onclick = function () {return false;};document.getElementById("aviso_resgate").readOnly = true;document.getElementById("aviso_resgate").className = "nodata2";document.getElementById("aviso_resgate").style.visibility = "hidden";
 document.getElementById("link_reembolso").href = "#";document.getElementById("link_reembolso").onclick = function () {return false;};document.getElementById("link_reembolso").readOnly = true;document.getElementById("link_reembolso").className = "disalnk";
 document.getElementById("link_cubagem").href = "#";document.getElementById("link_cubagem").onclick = function () {return false;};document.getElementById("link_cubagem").readOnly = true;document.getElementById("link_cubagem").className = "disalnk";
+document.getElementById("link_ver").href = "#";document.getElementById("link_ver").onclick = function () {return false;};document.getElementById("link_ver").readOnly = true;document.getElementById("link_ver").className = "disalnk";
 document.getElementById("link_resultado").href = "#";document.getElementById("link_resultado").onclick = function () {return false;};document.getElementById("link_resultado").readOnly = true;document.getElementById("link_resultado").className = "disalnk";
 document.getElementById("link_acareacao").href = "#";document.getElementById("link_acareacao").onclick = function () {return false;};document.getElementById("link_acareacao").readOnly = true;document.getElementById("link_acareacao").className = "disalnk";
 document.getElementById("link_unitizado").href = "#";document.getElementById("link_unitizado").onclick = function () {return false;};document.getElementById("link_unitizado").readOnly = true;document.getElementById("link_unitizado").className = "nodata2";document.getElementById("link_unitizado").style.visibility = "hidden";
 document.getElementById("link_resultado").href = "#";document.getElementById("link_resultado").onclick = function () {return false;};document.getElementById("link_resultado").readOnly = true;document.getElementById("link_resultado").className = "disalnk";
-document.getElementById("link_produto").href = "#";document.getElementById("link_produto").onclick = function () {return false;};document.getElementById("link_produto").readOnly = true;document.getElementById("link_produto").className = "disalnk";
+document.getElementById("link_oper").href = "#";document.getElementById("link_oper").onclick = function () {return false;};document.getElementById("link_oper").readOnly = true;document.getElementById("link_oper").className = "disalnk";
 document.getElementById("link_foto").href = "#";document.getElementById("link_foto").onclick = function () {return false;};document.getElementById("link_foto").readOnly = true;document.getElementById("link_foto").className = "disalnk";
 document.getElementById("link_foto").href = "#";document.getElementById("link_foto").onclick = function () {return false;};document.getElementById("link_foto").readOnly = true;document.getElementById("link_foto").className = "nodata2";document.getElementById("link_foto").style.visibility = "hidden";
 document.getElementById("link_co2").href = "#";document.getElementById("link_co2").onclick = function () {return false;};document.getElementById("link_co2").readOnly = true;document.getElementById("link_co2").className = "disalnk";
@@ -41,221 +42,211 @@ a.texto11:active, a.texto11:hover, a.texto11:focus{color:#000000;}
 <div class="texto" style="left:48px;top:64px;width:104px;color:red;"><b>Dados&nbsp;do&nbsp;CTRC:</b></div>
 <div class="texto" style="text-align:left;left:256px;top:64px;color:darkred;">FECHADA</div>
 <input readonly="" name="aviso_resgate" type="text" class="nodata2" id="aviso_resgate" value="#aviso_resgate#" style="left: 504px; top: 64px; width: 64px; visibility: hidden;">
-<div class="texto" style="text-align:left;left:648px;top:64px;color:#777;">000487057</div>
+<div class="texto" style="text-align:left;left:648px;top:64px;color:#777;">000494175</div>
 <div class="texto" style="left:712px;top:64px;width:56px;">Domínio:</div>
 <div class="data" style="text-align:left;left:776px;top:64px;">BIN</div>
 <div class="texto" style="left:832px;top:64px;width:56px;">Empresa:</div>
 <div class="data" style="text-align:left;left:896px;top:64px;">01</div>
 <div class="texto" style="left:24px;top:80px;width:128px;">CTRC&nbsp;/Subc./RPS:</div>
-<div class="data" style="text-align:left;left:160px;top:80px;"><b>GYN054320-9</b></div>
+<div class="data" style="text-align:left;left:160px;top:80px;"><b>GYN054779-4</b></div>
 <div class="texto" style="text-align:left;left:256px;top:80px;color:darkred;"></div>
-<a id="link_imp_dacte" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0767?act=ATALHO_IMP&amp;seq_ctrc=487057&amp;FAMILIA=BIN');return false;" accesskey="&amp;" style="position: absolute; left:504px;text-align:left; top:80px;">DACTE</a>
+<a id="link_imp_dacte" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0767?act=ATALHO_IMP&amp;seq_ctrc=494175&amp;FAMILIA=BIN');return false;" accesskey="&amp;" style="position: absolute; left:504px;text-align:left; top:80px;">DACTE</a>
 <a id="link_imp_xml" onfocus="obj=this;" style="left:552px; top:80px;" class="baselnk" href="#" onclick="ajaxEnvia('XML', 0);return false;" accesskey="&amp;">XML</a>
 <a id="link_cons_sefaz" onfocus="obj=this;" style="left:584px; top:80px;" class="baselnk" href="#" onclick="ajaxEnvia('CONS_SEFAZ', 0);return false;" accesskey="&amp;">SEFAZ</a>
 <div class="texto" style="text-align:left;left:648px;top:80px;color:#777;"></div>
 <a id="link_reembolso" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, '');return false;" accesskey="&amp;" style="position: absolute; left:776px;text-align:left; top:80px;"></a>
 <div class="texto" style="left:24px;top:96px;width:128px;">CT-e:</div>
-<a id="link_cte_rps" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0053?ctrc_seq_ctrc=487057&amp;data_ini_inf=1/6/23');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:96px;">004 000051412</a>
+<a id="link_cte_rps" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0053?ctrc_seq_ctrc=494175&amp;data_ini_inf=30/12/99');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:96px;">004 000051873</a>
 <a id="link_unitizado" onfocus="obj=this;" class="nodata2" href="#" onclick="ajaxEnvia('', 1, 'ssw0053#link_unitizado#');return false;" accesskey="&amp;" style="position: absolute; left: 256px; text-align: left; top: 96px; visibility: hidden;">Unitizado</a>
 <div class="texto" style="text-align:left;left:320px;top:96px;color:darkred;"></div>
-<div class="texto" style="left:400px;top:96px;width:96px;color:red;">25/04/25 16:06</div>
+<div class="texto" style="left:400px;top:96px;width:96px;color:red;">26/05/25 11:46</div>
 <div class="texto" style="text-align:left;left:504px;top:96px;color:red;"><b>AUTORIZADO</b></div>
 <div class="texto" style="left:704px;top:96px;width:64px;">Destino:</div>
-<div class="data" style="text-align:left;left:776px;top:96px;color:darkred;">FECI-TAUBATE          SP</div>
+<div class="data" style="text-align:left;left:776px;top:96px;color:darkred;">FECP-SAO PAULO        SP</div>
 <div class="texto" style="left:24px;top:112px;width:128px;">Inclusão:</div>
-<div class="data" style="text-align:left;left:160px;top:112px;">25/04/25 16:04</div>
+<div class="data" style="text-align:left;left:160px;top:112px;">26/05/25 11:46</div>
 <div class="data" style="text-align:left;left:256px;top:112px;"><a href="#" class="sra" onclick="userInfo(this);return(false);return false;"><u>anderson</u></a></div>
 <div class="texto" style="left:376px;top:112px;width:120px;">Entrega&nbsp;agendada:</div>
-<div class="data" style="text-align:left;left:504px;top:112px;">28/04/25</div>
+<div class="data" style="text-align:left;left:504px;top:112px;">28/05/25</div>
 <div class="texto" style="left:624px;top:112px;width:144px;">Previsão&nbsp;de&nbsp;entrega:</div>
-<div class="data" style="text-align:left;left:776px;top:112px;">28/04/25</div>
+<div class="data" style="text-align:left;left:776px;top:112px;">28/05/25</div>
 <div class="texto" style="text-align:left;left:832px;top:112px;"></div>
 <div class="texto" style="left:24px;top:128px;width:128px;">N°&nbsp;da&nbsp;Nota&nbsp;Fiscal:</div>
-<div class="data" style="text-align:left;left:160px;top:128px;">1/000315548</div>
-<div class="data" style="text-align:left;left:256px;top:128px;"><a href="#" class="sra" onclick="ajaxEnvia('A', 1);return false;"><u>3 NFs agrup</u></a></div>
+<div class="data" style="text-align:left;left:160px;top:128px;">1/000010040</div>
+<div class="data" style="text-align:left;left:256px;top:128px;"></div>
 <div class="texto" style="left:376px;top:128px;width:120px;">N°&nbsp;Pedido:</div>
 <div class="data" style="text-align:left;left:504px;top:128px;"></div>
 <div class="texto" style="left:624px;top:128px;width:144px;">Estou&nbsp;chegando:</div>
 <div class="data" style="text-align:left;left:776px;top:128px;"></div>
 <div class="texto" style="left:24px;top:144px;width:128px;">Qtde.&nbsp;de&nbsp;vol./pares:</div>
-<div class="data" style="text-align:left;left:160px;top:144px;">1942/0</div>
+<div class="data" style="text-align:left;left:160px;top:144px;">2580/0</div>
 <div class="texto" style="left:376px;top:144px;width:120px;">Conferente&nbsp;coleta:</div>
-<div class="data" style="text-align:left;left:504px;top:144px;">0059 SERVMAIS</div>
+<div class="data" style="text-align:left;left:504px;top:144px;">0055 EVANIO AL</div>
 <div class="texto" style="left:648px;top:144px;width:120px;">Prazo&nbsp;unid&nbsp;destinat:</div>
-<div class="li" style="text-align:left;left:776px;top:144px;">02/05/25</div>
+<div class="li" style="text-align:left;left:776px;top:144px;">30/05/25</div>
 <div class="texto" style="left:24px;top:160px;width:128px;">Tipo&nbsp;de&nbsp;mercadoria:</div>
-<div class="data" style="text-align:left;left:160px;top:160px;">009-CARRETA TOCO</div>
+<div class="data" style="text-align:left;left:160px;top:160px;">001-FRACIONADO</div>
 <div class="texto" style="left:320px;top:160px;width:176px;">Espécie&nbsp;de&nbsp;mercadoria:</div>
 <div class="data" style="text-align:left;left:504px;top:160px;">001-CAIXA PAPELAO</div>
 <div class="texto" style="text-align:left;left:688px;top:160px;">Veículo&nbsp;coleta:</div>
-<div class="data" style="text-align:left;left:776px;top:160px;">EVO8A36</div>
+<div class="data" style="text-align:left;left:776px;top:160px;">FHO1G14</div>
 <div class="texto" style="left:16px;top:176px;width:136px;">Peso&nbsp;cálculo&nbsp;(Kg):</div>
-<div class="data" style="text-align:left;left:160px;top:176px;">26.654,700</div>
+<div class="data" style="text-align:left;left:160px;top:176px;">8.584,898</div>
 <div class="texto" style="left:320px;top:176px;width:176px;">Peso&nbsp;real&nbsp;/Peso&nbsp;real&nbsp;orig&nbsp;(Kg):</div>
-<div class="data" style="text-align:left;left:504px;top:176px;">12.929,010</div>
+<div class="data" style="text-align:left;left:504px;top:176px;">8.584,898</div>
 <div class="data" style="text-align:left;left:552px;top:176px;"></div>
 <div style="left:760px; top: 176px; white-space: nowrap;width: 8px; overflow: visible;"><a id="link_cubagem" onfocus="obj=this;" style="right:0px;top:0px;" class="disalnk" href="#" onclick="ajaxEnvia('CUB', 1);return false;" accesskey="&amp;">Cubagem/Cub&nbsp;Orig&nbsp;(m³):</a>
 </div><div class="data" style="text-align:left;left:776px;top:176px;"></div>
-<div class="data" style="text-align:left;left:776px;top:176px;">88,8490</div>
+<div class="data" style="text-align:left;left:776px;top:176px;">0,0000</div>
 <div class="texto" style="left:16px;top:192px;width:136px;">Valor&nbsp;da&nbsp;Nota&nbsp;Fiscal:</div>
-<div class="data" style="text-align:left;left:160px;top:192px;">307.279,57</div>
+<div class="data" style="text-align:left;left:160px;top:192px;">505.060,59</div>
 <div class="texto" style="left:640px;top:192px;width:128px;">Frete&nbsp;original:</div>
 <div class="data" style="text-align:left;left:776px;top:192px;"></div>
 <div class="texto" style="left:24px;top:208px;width:128px;"><b>Valor&nbsp;frete&nbsp;(R$):</b></div>
-<div class="data" style="text-align:left;left:160px;top:208px;color:darkred;">8.170,41</div>
+<div class="data" style="text-align:left;left:160px;top:208px;color:darkred;">8.321,66</div>
 <div class="texto" style="left:360px;top:208px;width:136px;">Situação&nbsp;de&nbsp;liquidação:</div>
 <div class="data" style="text-align:left;left:504px;top:208px;color:darkred;">NAO LIQUIDADO</div>
 <div class="texto" style="left:640px;top:208px;width:128px;">NFS-e:</div>
 <div class="data" style="text-align:left;left:776px;top:208px;"></div>
 <div class="texto" style="left:24px;top:224px;width:128px;">ICMS/ISS&nbsp;(R$):</div>
-<div class="data" style="text-align:left;left:160px;top:224px;">980,45</div>
+<div class="data" style="text-align:left;left:160px;top:224px;">998,60</div>
 <div class="texto" style="left:360px;top:224px;width:136px;">Tipo&nbsp;de&nbsp;cobrança:</div>
-<div class="data" style="text-align:left;left:504px;top:224px;"><font color="red"><b>CIF</b></font> - CARTEIRA</div>
+<div class="data" style="text-align:left;left:504px;top:224px;"><font color="red"><b>FOB</b></font> - BANCO</div>
 <div class="texto" style="left:48px;top:240px;width:104px;color:red;"><b>Remetente:</b></div>
 <div class="texto" style="left:416px;top:240px;width:80px;color:red;"><b>Destinatário:</b></div>
 <div class="texto" style="left:48px;top:256px;width:104px;">Nome:</div>
-<div class="data" style="text-align:left;left:160px;top:256px;">FALCON DISTRIBUICAO, ARMA (A.)</div>
+<div class="data" style="text-align:left;left:160px;top:256px;">RENOVA COM DE PROD DE USO (..)</div>
 <div class="texto" style="left:424px;top:256px;width:72px;">Nome:</div>
-<div class="data" style="text-align:left;left:504px;top:256px;">COML ZARAGOZA IMP E EXP LTD ..&nbsp;<font color="red">(ED)</font></div>
+<div class="data" style="text-align:left;left:504px;top:256px;">RENOVA COMERCIO DE PRODUTOS ..</div>
 <div class="texto" style="left:48px;top:272px;width:104px;">CNPJ:</div>
-<a id="link_cli_rem" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=10018');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:272px;">23191831000193</a>
+<a id="link_cli_rem" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=313628');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:272px;">40294379000295</a>
 <div style="left:288px; top: 272px; white-space: nowrap;width: 8px; overflow: visible;"><a id="link_cp_cli_rem" onfocus="obj=this;" class="baselnk" href="#" onclick="ctrlc('1');return false;" accesskey="&amp;" style="color: black; border-bottom: 1px solid black; position: absolute; right:0px;text-align:left; top:0px;">Ctrl-C</a>
 </div><div class="texto" style="left:304px;top:272px;width:40px;">Setor:</div>
 <div class="data" style="text-align:left;left:352px;top:272px;">001</div>
-<a id="link_mapa_setor_cli_rem" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=RUA IZA COSTA,1104&amp;nome=FALCON%20DISTRIBUICAO%2C%20ARMA%20%28A%2E%29&amp;olat=-16,622032&amp;olng=-49,263855&amp;cid=GOIANIA&amp;uf=GO');return false;" accesskey="&amp;" style="position: absolute; left:400px;text-align:left; top:272px;">mapa</a>
+<a id="link_mapa_setor_cli_rem" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=AV. PERIMETRAL NORTE,3541&amp;nome=RENOVA%20COM%20DE%20PROD%20DE%20USO%20%28%2E%2E%29&amp;cid=GOIANIA&amp;uf=GO');return false;" accesskey="&amp;" style="position: absolute; left:400px;text-align:left; top:272px;">mapa</a>
 <div class="texto" style="left:424px;top:272px;width:72px;">CNPJ:</div>
-<a id="link_cli_dest" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=518');return false;" accesskey="&amp;" style="position: absolute; left:504px;text-align:left; top:272px;">05868574001090</a>
+<a id="link_cli_dest" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=55267');return false;" accesskey="&amp;" style="position: absolute; left:504px;text-align:left; top:272px;">40294379000104</a>
 <div style="left:632px; top: 272px; white-space: nowrap;width: 8px; overflow: visible;"><a id="link_cp_cli_dest" onfocus="obj=this;" class="baselnk" href="#" onclick="ctrlc('2');return false;" accesskey="&amp;" style="color: black; border-bottom: 1px solid black; position: absolute; right:0px;text-align:left; top:0px;">Ctrl-C</a>
 </div><div class="texto" style="left:648px;top:272px;width:40px;">Setor:</div>
-<div class="data" style="text-align:left;left:696px;top:272px;">120</div>
-<a id="link_mapa_setor_cli_dest" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=AV DOM PEDRO I,6707&amp;nome=COML%20ZARAGOZA%20IMP%20E%20EXP%20LTD%20%2E%2E%26nbsp%3B%3Cfont%20color%3Dred%3E%28ED%29%3C%2Ffont%3E&amp;olat=-23,0486684&amp;olng=-45,5938841&amp;cid=TAUBATE&amp;uf=SP');return false;" accesskey="&amp;" style="position: absolute; left:744px;text-align:left; top:272px;">mapa</a>
+<div class="data" style="text-align:left;left:696px;top:272px;">4</div>
+<a id="link_mapa_setor_cli_dest" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=RUA DOZE DE SETEMBRO,1259&amp;nome=RENOVA%20COMERCIO%20DE%20PRODUTOS%20%2E%2E&amp;olat=-23,5113633&amp;olng=-46,6074338&amp;cid=SAO PAULO&amp;uf=SP');return false;" accesskey="&amp;" style="position: absolute; left:744px;text-align:left; top:272px;">mapa</a>
 <div class="texto" style="left:48px;top:288px;width:104px;">CEP:</div>
-<div class="data" style="text-align:left;left:160px;top:288px;">74666-003&nbsp;&nbsp;GOIANIA/GO</div>
+<div class="data" style="text-align:left;left:160px;top:288px;">74445-360&nbsp;&nbsp;GOIANIA/GO</div>
 <div class="texto" style="left:424px;top:288px;width:72px;">CEP:</div>
-<div class="data" style="text-align:left;left:504px;top:288px;">12091-000&nbsp;&nbsp;TAUBATE/SP</div>
+<div class="data" style="text-align:left;left:504px;top:288px;">02052-001&nbsp;&nbsp;SAO PAULO/SP</div>
 <div class="texto" style="left:48px;top:304px;width:104px;">Telefone:</div>
-<div class="data" style="text-align:left;left:160px;top:304px;">(62) 38788154</div>
+<div class="data" style="text-align:left;left:160px;top:304px;">(11) 22186110</div>
 <div class="texto" style="left:280px;top:304px;width:64px;">Celular:</div>
 <div class="data" style="text-align:left;left:352px;top:304px;"></div>
 <div class="texto" style="left:424px;top:304px;width:72px;">Telefone:</div>
-<div class="data" style="text-align:left;left:504px;top:304px;">(12) 36348700</div>
+<div class="data" style="text-align:left;left:504px;top:304px;">(11) 22189090</div>
 <div class="texto" style="left:624px;top:304px;width:64px;">Celular:</div>
 <div class="data" style="text-align:left;left:696px;top:304px;"></div>
 <div class="texto" style="left:48px;top:320px;width:104px;color:red;"><b>Expedidor:</b></div>
 <div class="texto" style="left:416px;top:320px;width:80px;color:red;"><b>Entrega:</b></div>
 <div class="texto" style="left:80px;top:336px;width:72px;">Nome:</div>
-<div class="data" style="text-align:left;left:160px;top:336px;">FALCON DISTRIBUICAO, ARMAZE A.</div>
+<div class="data" style="text-align:left;left:160px;top:336px;">RENOVA COM DE PROD DE USO P ..</div>
 <div class="texto" style="left:424px;top:336px;width:72px;">Nome:</div>
-<div class="data" style="text-align:left;left:504px;top:336px;">COML ZARAGOZA IMP E EXP LTD ..&nbsp;<font color="red">(ED) </font></div>
+<div class="data" style="text-align:left;left:504px;top:336px;">RENOVA COMERCIO DE PRODUTOS ..</div>
 <div class="texto" style="left:80px;top:352px;width:72px;">CNPJ:</div>
-<a id="link_cli_exp" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=10018');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:352px;">23191831000193</a>
+<a id="link_cli_exp" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=313628');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:352px;">40294379000295</a>
 <div style="left:288px; top: 352px; white-space: nowrap;width: 8px; overflow: visible;"><a id="link_cp_cli_exp" onfocus="obj=this;" class="baselnk" href="#" onclick="ctrlc('3');return false;" accesskey="&amp;" style="color: black; border-bottom: 1px solid black; position: absolute; right:0px;text-align:left; top:0px;">Ctrl-C</a>
 </div><div class="texto" style="left:304px;top:352px;width:40px;">Setor:</div>
 <div class="data" style="text-align:left;left:352px;top:352px;">001</div>
-<a id="link_mapa_setor_cli_exp" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=RUA IZA COSTA,1104&amp;nome=FALCON%20DISTRIBUICAO%2C%20ARMAZE%20A%2E&amp;olat=-16,622032&amp;olng=-49,263855&amp;cid=GOIANIA&amp;uf=GO');return false;" accesskey="&amp;" style="position: absolute; left:400px;text-align:left; top:352px;">mapa</a>
+<a id="link_mapa_setor_cli_exp" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=AV. PERIMETRAL NORTE,3541&amp;nome=RENOVA%20COM%20DE%20PROD%20DE%20USO%20P%20%2E%2E&amp;cid=GOIANIA&amp;uf=GO');return false;" accesskey="&amp;" style="position: absolute; left:400px;text-align:left; top:352px;">mapa</a>
 <div class="texto" style="left:424px;top:352px;width:72px;">CNPJ:</div>
-<a id="link_cli_ent" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=518');return false;" accesskey="&amp;" style="position: absolute; left:504px;text-align:left; top:352px;">05868574001090</a>
+<a id="link_cli_ent" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=55267');return false;" accesskey="&amp;" style="position: absolute; left:504px;text-align:left; top:352px;">40294379000104</a>
 <div style="left:632px; top: 352px; white-space: nowrap;width: 8px; overflow: visible;"><a id="link_cp_cli_ent" onfocus="obj=this;" class="baselnk" href="#" onclick="ctrlc('4');return false;" accesskey="&amp;" style="color: black; border-bottom: 1px solid black; position: absolute; right:0px;text-align:left; top:0px;">Ctrl-C</a>
 </div><div class="texto" style="left:648px;top:352px;width:40px;">Setor:</div>
-<div class="data" style="text-align:left;left:696px;top:352px;">120</div>
-<a id="link_mapa_setor_cli_ent" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=AV DOM PEDRO I,6707&amp;nome=COML%20ZARAGOZA%20IMP%20E%20EXP%20LTD%20%2E%2E%26nbsp%3B%3Cfont%20color%3Dred%3E%28ED%29%3C%2Ffont%3E&amp;olat=-23,0486684&amp;olng=-45,5938841&amp;cid=TAUBATE&amp;uf=SP');return false;" accesskey="&amp;" style="position: absolute; left:744px;text-align:left; top:352px;">mapa</a>
+<div class="data" style="text-align:left;left:696px;top:352px;">4</div>
+<a id="link_mapa_setor_cli_ent" onfocus="obj=this;" class="baselnkr" href="#" onclick="showmapa('end=RUA DOZE DE SETEMBRO,1259&amp;nome=RENOVA%20COMERCIO%20DE%20PRODUTOS%20%2E%2E&amp;olat=-23,5113633&amp;olng=-46,6074338&amp;cid=SAO PAULO&amp;uf=SP');return false;" accesskey="&amp;" style="position: absolute; left:744px;text-align:left; top:352px;">mapa</a>
 <div class="texto" style="left:80px;top:368px;width:72px;">Endereço:</div>
-<div class="data" style="text-align:left;left:160px;top:368px;">RUA IZA COSTA,1104</div>
+<div class="data" style="text-align:left;left:160px;top:368px;">AV. PERIMETRAL NORTE,3541</div>
 <div class="texto" style="left:424px;top:368px;width:72px;">Endereço:</div>
-<div class="data" style="text-align:left;left:504px;top:368px;">AV DOM PEDRO I,6707</div>
+<div class="data" style="text-align:left;left:504px;top:368px;">RUA DOZE DE SETEMBRO,1259</div>
 <div class="texto" style="left:64px;top:384px;width:88px;">Complemento:</div>
-<div class="data" style="text-align:left;left:160px;top:384px;">MODULO 2</div>
+<div class="data" style="text-align:left;left:160px;top:384px;">QD AREA</div>
 <div class="texto" style="left:408px;top:384px;width:88px;">Complemento:</div>
 <div class="data" style="text-align:left;left:504px;top:384px;"></div>
 <div class="texto" style="left:80px;top:400px;width:72px;">Bairro:</div>
-<div class="data" style="text-align:left;left:160px;top:400px;">FAZENDA RETIRO</div>
+<div class="data" style="text-align:left;left:160px;top:400px;">FAZ CAVEIRAS</div>
 <div class="texto" style="left:424px;top:400px;width:72px;">Bairro:</div>
-<div class="data" style="text-align:left;left:504px;top:400px;">JARDIM BARONESA</div>
+<div class="data" style="text-align:left;left:504px;top:400px;">VILA GUILHERME</div>
 <div class="texto" style="left:80px;top:416px;width:72px;">CEP:</div>
-<div class="data" style="text-align:left;left:160px;top:416px;">74666-003&nbsp;&nbsp;GOIANIA/GO</div>
+<div class="data" style="text-align:left;left:160px;top:416px;">74445-360&nbsp;&nbsp;GOIANIA/GO</div>
 <div class="texto" style="left:424px;top:416px;width:72px;">CEP:</div>
-<div class="data" style="text-align:left;left:504px;top:416px;">12091-000&nbsp;&nbsp;TAUBATE/SP</div>
+<div class="data" style="text-align:left;left:504px;top:416px;">02052-001&nbsp;&nbsp;SAO PAULO/SP</div>
 <div class="texto" style="left:80px;top:432px;width:72px;">Telefone:</div>
-<div class="data" style="text-align:left;left:160px;top:432px;">(62) 38788154</div>
+<div class="data" style="text-align:left;left:160px;top:432px;">(11) 22186110</div>
 <div class="texto" style="left:280px;top:432px;width:64px;">Celular:</div>
 <div class="data" style="text-align:left;left:352px;top:432px;"></div>
 <div class="texto" style="left:424px;top:432px;width:72px;">Telefone:</div>
-<div class="data" style="text-align:left;left:504px;top:432px;">(12) 36348700</div>
+<div class="data" style="text-align:left;left:504px;top:432px;">(11) 22189090</div>
 <div class="texto" style="left:624px;top:432px;width:64px;">Celular:</div>
 <div class="data" style="text-align:left;left:696px;top:432px;"></div>
 <div class="texto" style="left:48px;top:448px;width:104px;color:red;"><b>Pagador:</b></div>
 <div class="texto" style="left:432px;top:448px;width:128px;color:red;"><b>Outras&nbsp;Informações:</b></div>
 <div class="texto" style="left:48px;top:464px;width:104px;">Nome:</div>
-<div class="data" style="text-align:left;left:160px;top:464px;">FALCON DISTRIBUICAO, ARMA (A.)</div>
+<div class="data" style="text-align:left;left:160px;top:464px;">RENOVA COMERCIO DE PRODUT (..)</div>
 <div class="texto" style="left:392px;top:464px;width:168px;">Últ&nbsp;Romaneio/placa&nbsp;entrega:</div>
-<div class="data" style="text-align:left;left:568px;top:464px;"><a href="#" class="sra" onclick="ajaxEnvia('', 1, 'ssw0146?seq_romaneio=110936&amp;chamador=ssw0053&amp;ler_morto=S', 1)"><u>FEC002836-3</u></a>/FPZ9A82</div>
+<div class="data" style="text-align:left;left:568px;top:464px;"></div>
 <div class="data" style="text-align:left;left:704px;top:464px;"></div>
-<a id="link_ver" onfocus="obj=this;" style="left:744px; top:464px;" class="baselnk" href="#" onclick="ajaxEnvia('TODROM', 1);return false;" accesskey="&amp;">Ver&nbsp;todos</a>
+<a id="link_ver" onfocus="obj=this;" style="left:744px; top:464px;" class="disalnk" href="#" onclick="ajaxEnvia('TODROM', 1);return false;" accesskey="&amp;">Ver&nbsp;todos</a>
 <div class="texto" style="left:48px;top:480px;width:104px;">CNPJ:</div>
-<a id="link_cli_pag" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=10018');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:480px;">23191831000193</a>
+<a id="link_cli_pag" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0054?act=55267');return false;" accesskey="&amp;" style="position: absolute; left:160px;text-align:left; top:480px;">40294379000104</a>
 <div style="left:288px; top: 480px; white-space: nowrap;width: 8px; overflow: visible;"><a id="link_cp_cli_pag" onfocus="obj=this;" class="baselnk" href="#" onclick="ctrlc('5');return false;" accesskey="&amp;" style="color: black; border-bottom: 1px solid black; position: absolute; right:0px;text-align:left; top:0px;">Ctrl-C</a>
 </div><div class="texto" style="left:400px;top:480px;width:160px;">Capa&nbsp;Remessa&nbsp;C&nbsp;E:</div>
 <div class="data" style="text-align:left;left:568px;top:480px;"></div>
 <div class="data" style="text-align:left;left:688px;top:480px;"></div>
 <div class="texto" style="left:48px;top:496px;width:104px;color:red;"><b>Operação:</b></div>
 <div class="texto" style="left:400px;top:496px;width:160px;">Pacote&nbsp;arquiv&nbsp;C&nbsp;E:</div>
-<div class="data" style="text-align:left;left:568px;top:496px;">BIN GYN 301077</div>
-<div class="data" style="text-align:left;left:688px;top:496px;">29/04/25 14:02</div>
+<div class="data" style="text-align:left;left:568px;top:496px;">BIN GYN 301118</div>
+<div class="data" style="text-align:left;left:688px;top:496px;">29/05/25 10:15</div>
 <div class="texto" style="left:48px;top:512px;width:104px;">Origem:</div>
 <div class="data" style="text-align:left;left:160px;top:512px;"><font color="red"><b>GYN</b></font>P / <font color="red"><b>GO</b></font> - GOIANIA</div>
 <div class="texto" style="left:400px;top:512px;width:160px;">Capa&nbsp;Comprov&nbsp;Ext:</div>
 <div class="data" style="text-align:left;left:568px;top:512px;"></div>
 <div class="data" style="text-align:left;left:688px;top:512px;"></div>
 <div class="texto" style="left:48px;top:528px;width:104px;">Destino:</div>
-<div class="data" style="text-align:left;left:160px;top:528px;"><font color="red"><b>FEC</b></font>I / <font color="red"><b>SP</b></font> - TAUBATE</div>
+<div class="data" style="text-align:left;left:160px;top:528px;"><font color="red"><b>FEC</b></font>P / <font color="red"><b>SP</b></font> - SAO PAULO</div>
 <div class="texto" style="left:400px;top:528px;width:160px;">Capa&nbsp;Canhoto&nbsp;NF:</div>
 <div class="data" style="text-align:left;left:568px;top:528px;"></div>
 <div class="texto" style="left:48px;top:544px;width:104px;">CFOP:</div>
 <div class="data" style="text-align:left;left:160px;top:544px;"><font color="red"><b>6353</b></font></div>
 <div class="texto" style="left:24px;top:560px;width:128px;color:red;"><b>Observação:</b></div>
-<div class="data" style="text-align:left;left:160px;top:560px;color:darkred;">DT-2208915  DATA DA AGENDA: 28/04/2025  06:00 HRS  SENHA: 156390</div>
-<div class="data" style="text-align:left;left:160px;top:576px;color:darkred;"></div>
+<div class="data" style="text-align:left;left:160px;top:560px;color:darkred;">NF PLT 52250540294379000295550010000100411559539157 VOL 51</div>
+<div class="data" style="text-align:left;left:160px;top:576px;color:darkred;">AGENDA 28/05/25  06:00 HORAS</div>
 <div class="data" style="text-align:left;left:160px;top:592px;color:darkred;"></div>
 <div class="data" style="text-align:left;left:160px;top:608px;color:darkred;"></div>
 <div class="data" style="text-align:left;left:160px;top:624px;color:darkred;"></div>
 <div class="texto" style="left:24px;top:640px;width:128px;color:red;"><b>Instrução&nbsp;Entrega:</b></div>
-<div class="data" style="text-align:left;left:160px;top:640px;color:darkred;">DEVOLVER CANHOTO NF. NECESSARIO AGENDAMENTO- CLIENTE COBRA MULTA POR NO SHOW NA ENTREGA - VALOR COBRADO E 100%DO VALOR DA DESCARGA. INFOR</div>
+<div class="data" style="text-align:left;left:160px;top:640px;color:darkred;"></div>
 <div class="texto" style="text-align:left;left:64px;top:656px;color:red;"><b>Situação&nbsp;Atual:</b></div>
-<div class="data" style="text-align:left;left:64px;top:672px;">BIN FEC&nbsp;&nbsp;28/04/25&nbsp;18:11&nbsp;&nbsp;&nbsp;<b>1-ENTREGA REALIZADA</b></div>
+<div class="data" style="text-align:left;left:64px;top:672px;">BIN SPO&nbsp;&nbsp;28/05/25&nbsp;16:47&nbsp;&nbsp;&nbsp;<b>1-ENTREGA REALIZADA</b></div>
 <img style="position:absolute; top:727px;left:0px; width:1000px;height:1px; background-color:#000000;">
 <a id="link_ocor" onfocus="obj=this;" style="left:24px; top:736px;" class="baselnk" href="#" onclick="ajaxEnvia('O', 1);return false;" accesskey="O"><u>O</u>corrências</a>
-<a id="link_frete" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1127?seq_ctrc=487057&amp;IMPRESSAO=N&amp;FAMILIA=BIN');return false;" accesskey="E" style="position: absolute; left:136px;text-align:left; top:736px;">Fr<u>e</u>te</a>
+<a id="link_frete" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1127?seq_ctrc=494175&amp;IMPRESSAO=N&amp;FAMILIA=BIN');return false;" accesskey="E" style="position: absolute; left:136px;text-align:left; top:736px;">Fr<u>e</u>te</a>
 <a id="link_danfe" onfocus="obj=this;" style="left:200px; top:736px;" class="baselnk" href="#" onclick="ajaxEnvia('A', 1);return false;" accesskey="D"><u>D</u>ANFEs</a>
-<a id="link_oper" onfocus="obj=this;" style="left:288px; top:736px;" class="baselnk" href="#" onclick="ajaxEnvia('S', 1);return false;" accesskey="&amp;">Operação&nbsp;Anterior</a>
+<a id="link_oper" onfocus="obj=this;" style="left:288px; top:736px;" class="disalnk" href="#" onclick="ajaxEnvia('S', 1);return false;" accesskey="&amp;">Operação&nbsp;Anterior</a>
 <a id="link_arq" onfocus="obj=this;" style="left:424px; top:736px;" class="baselnk" href="#" onclick="ajaxEnvia('ARQ', 1);return false;" accesskey="A"><u>A</u>rquivos&nbsp;EDI</a>
 <a id="link_sswbar" onfocus="obj=this;" style="left:520px; top:736px;" class="disalnk" href="#" onclick="ajaxEnvia('SSWBAR', 1);return false;" accesskey="&amp;">SSWBAR/sorter</a>
 <a id="link_compro" onfocus="obj=this;" style="left:624px; top:736px;" class="baselnk" href="#" onclick="ajaxEnvia('COM', 1);return false;" accesskey="C"><u>C</u>omprov&nbsp;Entrega</a>
-<a id="link_liquidacao" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0183?seq_ctrc=487057&amp;tp_pgto=P&amp;tp_baixa=F&amp;data_baixa=30/12/99');return false;" accesskey="L" style="position: absolute; left:752px;text-align:left; top:736px;"><u>L</u>iquidação</a>
-<a id="link_co2" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw3273?act=487057');return false;" accesskey="&amp;" style="position: absolute; left:848px;text-align:left; top:736px;">CO2&nbsp;emitido</a>
-<a id="link_resultado" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1123?seq_ctrc=487057');return false;" accesskey="U" style="position: absolute; left:952px;text-align:left; top:736px;">Res<u>u</u>ltado</a>
+<a id="link_liquidacao" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw0183?seq_ctrc=494175&amp;tp_pgto=P&amp;tp_baixa=F&amp;data_baixa=30/12/99');return false;" accesskey="L" style="position: absolute; left:752px;text-align:left; top:736px;"><u>L</u>iquidação</a>
+<a id="link_co2" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw3273?act=494175');return false;" accesskey="&amp;" style="position: absolute; left:848px;text-align:left; top:736px;">CO2&nbsp;emitido</a>
+<a id="link_resultado" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1123?seq_ctrc=494175');return false;" accesskey="U" style="position: absolute; left:952px;text-align:left; top:736px;">Res<u>u</u>ltado</a>
 <a id="link_transf" onfocus="obj=this;" style="left:24px; top:752px;" class="baselnk" href="#" onclick="ajaxEnvia('R', 1);return false;" accesskey="T"><u>T</u>ransferências</a>
 <a id="link_fiscal" onfocus="obj=this;" style="left:136px; top:752px;" class="baselnk" href="#" onclick="ajaxEnvia('TRIBUT', 1);return false;" accesskey="&amp;">Fiscal</a>
-<a id="link_produto" onfocus="obj=this;" style="left:200px; top:752px;" class="disalnk" href="#" onclick="ajaxEnvia('RELPROD', 0);return false;" accesskey="&amp;">Produtos</a>
-<a id="link_carta" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1306?act=IMP&amp;seq_ctrc=487057&amp;fg_local=C');return false;" accesskey="&amp;" style="position: absolute; left:288px;text-align:left; top:752px;">Carta&nbsp;de&nbsp;Correção</a>
-<a id="link_acareacao" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1678?act=EXT&amp;seq_ctrc=487057');return false;" accesskey="&amp;" style="position: absolute; left:424px;text-align:left; top:752px;">Acareação</a>
+<a id="link_produto" onfocus="obj=this;" style="left:200px; top:752px;" class="baselnk" href="#" onclick="ajaxEnvia('RELPROD', 0);return false;" accesskey="&amp;">Produtos</a>
+<a id="link_carta" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1306?act=IMP&amp;seq_ctrc=494175&amp;fg_local=C');return false;" accesskey="&amp;" style="position: absolute; left:288px;text-align:left; top:752px;">Carta&nbsp;de&nbsp;Correção</a>
+<a id="link_acareacao" onfocus="obj=this;" class="disalnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1678?act=EXT&amp;seq_ctrc=494175');return false;" accesskey="&amp;" style="position: absolute; left:424px;text-align:left; top:752px;">Acareação</a>
 <a id="link_foto" onfocus="obj=this;" style="left: 624px; top: 752px; visibility: hidden;" class="nodata2" href="#" onclick="ajaxEnvia('FOT_ENT', 1);return false;" accesskey="&amp;">Foto&nbsp;da&nbsp;Entrega</a>
 <a href="#" id="btn_fec" onfocus="obj=this;" style="left:24px; top:768px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
-<div class="data" id="descricao" style="text-align:left; left:208px;top:688px;height:32px;width:720px;">ENTREGA REALIZADA EM 28/04/25 18:00H E FOI RECEBIDO POR CARIMBO, PARENTESCO: , DOC N.:  (OPC 038). Comprovante registrado no SEFAZ-GO - Protocolo: 352250043652977 - 29/04/25 13:20 (cte.fazenda.gov.br).</div>
+<div class="data" id="descricao" style="text-align:left; left:208px;top:688px;height:32px;width:720px;">ENTREGA REALIZADA EM 28/05/25 16:47H E FOI RECEBIDO POR RUBRICA, PARENTESCO: , DOC N.:  (OPC 038). Comprovante registrado no SEFAZ-GO - Protocolo: 352250055861229 - 29/05/25 12:20 (cte.fazenda.gov.br).</div>
 <input type="hidden" name="act">
-<input type="hidden" name="g_ctrc_ser_ctrc" id="g_ctrc_ser_ctrc" value="">
-<input type="hidden" name="g_ctrc_nro_ctrc" id="g_ctrc_nro_ctrc" value="0">
-<input type="hidden" name="gw_nro_nf_ini" id="gw_nro_nf_ini" value="315550">
-<input type="hidden" name="g_ctrc_nf_vol_ini" id="g_ctrc_nf_vol_ini" value="0">
-<input type="hidden" name="gw_ctrc_nr_sscc" id="gw_ctrc_nr_sscc" value="">
-<input type="hidden" name="g_ctrc_nro_ctl_form" id="g_ctrc_nro_ctl_form" value="0">
-<input type="hidden" name="gw_ctrc_parc_nro_ctrc_parc" id="gw_ctrc_parc_nro_ctrc_parc" value="0">
-<input type="hidden" name="g_ctrc_c_chave_fis" id="g_ctrc_c_chave_fis" value="">
-<input type="hidden" name="gw_gaiola_codigo" id="gw_gaiola_codigo" value="0">
-<input type="hidden" name="gw_pallet_codigo" id="gw_pallet_codigo" value="0">
 <input type="hidden" name="local" id="local" value="Q">
-<input type="hidden" name="data_ini_inf" id="data_ini_inf" value="1%2F6%2F23">
-<input type="hidden" name="data_fin_inf" id="data_fin_inf" value="31%2F5%2F25">
-<input type="hidden" name="seq_ctrc" id="seq_ctrc" value="487057">
+<input type="hidden" name="data_ini_inf" id="data_ini_inf" value="30%2F12%2F99">
+<input type="hidden" name="data_fin_inf" id="data_fin_inf" value="30%2F12%2F99">
+<input type="hidden" name="seq_ctrc" id="seq_ctrc" value="494175">
 <input type="hidden" name="FAMILIA" id="FAMILIA" value="BIN">
 <script id="mainscript" type="text/javascript"><!--
 objfocus = "link_ocor";
@@ -266,7 +257,7 @@ help_file = "ssw0053.htm";
 </form>
 <div class="cabecalho">&nbsp;
 <div id="infodiv" class="texto3" style="left:8px;bottom:8px;"><span style="color: rgb(245,245,255)">Domínio: <b>BIN</b></span><b>&nbsp;SPO&nbsp;thiago&nbsp;08</b></div>
-<div id="telaprog" class="texto3" style="right:8px;bottom:24px;color:silver;overflow:visible">ssw0053.44&nbsp;31/05/25&nbsp;08:53</div>
+<div id="telaprog" class="texto3" style="right:8px;bottom:24px;color:silver;overflow:visible">ssw0053.44&nbsp;31/05/25&nbsp;19:24</div>
 <div id="cablnk" style="right:8px;bottom:8px;"><a class="cablnk" href="#" onclick="window.print(); return false;">Imprimir</a>&nbsp;&nbsp;&nbsp;<a class="cablnk" href="#" onclick="envia3('', 1, 'ssw1243');return false;">E-mails/fones</a>&nbsp;&nbsp;&nbsp;<a class="cablnk" href="#" onclick="envia3('', 1, 'ssw0187'); return false;">Correio</a>&nbsp;&nbsp;&nbsp;<a class="cablnk" href="#" onclick="showhelp(1, '/ajuda/' + help_file);return false;"><big><b> ? </b></big></a></div>
 <div class="tituloprog" id="tituloprog"><a class="tituloprog" href="/bin/menu01">SSW</a>&nbsp;/&nbsp;<a class="tituloprog" href="#" help="A0002" onclick="TitleMenu01Click(this, 2);return false;">Cliente</a> / <a class="tituloprog" href="#" help="B00020001" onclick="TitleMenu02Click(this, 2,1);return false">Situação</a> / <span class="titulo">101 - Situação do CTRC</span></div>
 </div>

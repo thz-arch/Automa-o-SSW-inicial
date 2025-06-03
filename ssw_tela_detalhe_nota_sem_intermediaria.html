@@ -1,0 +1,120 @@
+<html><head>
+<title>101 - Situação do CTRC :: SSW Sistema de Transportes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="/ssw.css?version=4" type="text/css" charset="iso-8859-1">
+<script language="JavaScript" src="/scripts/ssw_010622.js?version=2" charset="iso-8859-1"></script>
+<script type="text/javascript"><!--
+var obj;var objfocus;var objmais;var help_file;var webTitle;
+function fl(){document.getElementById(1).href = "#";document.getElementById(1).onclick = function () {return false;};document.getElementById(1).readOnly = true;document.getElementById(1).className = "disalnk";
+}
+//--></script>
+<style>.cabecalho{background:#000000;background-color:#000000;}
+a.menulnk:active, a.menulnk:hover, a.menulnk:focus{color:#000000;}
+a.menulnkdestaca:active, a.menulnkdestaca:hover, a.menulnkdestaca:focus{color:#000000;}
+.menulnk{background:#000000;}
+.menulnkdestaca{background:#000000;}
+.texto11{background:#000000;}
+.mainMenuLevel1{background:#000000;}
+.mainMenuLevel2{background:#000000;}
+.mainMenuLevel3{background:#000000;}
+a.texto11:active, a.texto11:hover, a.texto11:focus{color:#000000;}
+.srtit {background:#000000;}
+.srtit2 {background:#000000;}
+#scontentbar{background-color:#000000;}
+</style>
+</head>
+<body onload="fl();">
+<form name="frm" id="frm" method="POST" action="/bin/ssw0053" autocomplete="off">
+<script language="JavaScript" src="/scripts/ssw0053_280723.js" charset="iso-8859-1"></script>
+<a id="1" onfocus="obj=this;" class="disalnk" href="#" onclick="sswlite('ssw0053_l');return false;" accesskey="&amp;" style="position: absolute; left:736px;text-align:left; top:48px;"><!--lenta--></a>
+<div class="texto" style="left:24px;top:64px;width:224px;">CTRC&nbsp;(sigla&nbsp;opc,&nbsp;número&nbsp;sem&nbsp;DV):</div>
+<input name="t_ser_ctrc" id="t_ser_ctrc" value="" maxlength="3" style="left: 256px; top: 64px; width: 32px; background: white;">
+<input name="t_nro_ctrc" num="1" exc="1" id="t_nro_ctrc" value="" maxlength="6" style="left:296px;top:64px;width:80px;">
+<a id="2" onfocus="obj=this;" style="left:384px; top:64px;" class="imglnk" href="#" onclick="ajaxEnvia('P1', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="3" onfocus="obj=this;" style="left:408px; top:64px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:8px;top:80px;width:240px;">Nota&nbsp;Fiscal&nbsp;(série&nbsp;opc/número):</div>
+<input name="t_ser_nf" id="t_ser_nf" value="" maxlength="3" style="left:256px;top:80px;width:32px;">
+<input name="t_nro_nf" num="1" exc="1" id="t_nro_nf" value="" maxlength="10" style="left: 296px; top: 80px; width: 80px; background: white;">
+<a id="4" onfocus="obj=this;" style="left:384px; top:80px;" class="imglnk" href="#" onclick="ajaxEnvia('P2', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="5" onfocus="obj=this;" style="left:408px; top:80px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:88px;top:96px;width:160px;">NR1,&nbsp;NR2&nbsp;ou&nbsp;NR:</div>
+<input name="t_nrs" num="1" exc="1" id="t_nrs" value="" maxlength="14" style="left:256px;top:96px;width:120px;">
+<a id="6" onfocus="obj=this;" style="left:384px; top:96px;" class="imglnk" href="#" onclick="ajaxEnvia('P3', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="7" onfocus="obj=this;" style="left:408px; top:96px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:104px;top:112px;width:144px;">Cod&nbsp;vol&nbsp;cliente/shipment:</div>
+<input name="t_cod_cli" exc="1" id="t_cod_cli" value="" maxlength="50" style="left:256px;top:112px;width:120px;">
+<a id="8" onfocus="obj=this;" style="left:384px; top:112px;" class="imglnk" href="#" onclick="ajaxEnvia('P8', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="9" onfocus="obj=this;" style="left:408px; top:112px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:88px;top:128px;width:160px;">CT-e/N°&nbsp;controle:</div>
+<input name="t_nro_cte" num="1" exc="1" id="t_nro_cte" value="" maxlength="10" style="left:256px;top:128px;width:120px;">
+<a id="10" onfocus="obj=this;" style="left:384px; top:128px;" class="imglnk" href="#" onclick="ajaxEnvia('P4', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="11" onfocus="obj=this;" style="left:408px; top:128px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:88px;top:144px;width:160px;">Gaiola:</div>
+<input name="t_gaiola" num="1" exc="1" id="t_gaiola" value="" onchange="altera_data_gaiola();" "="" maxlength="9" style="left:256px;top:144px;width:120px;">
+<a id="12" onfocus="obj=this;" style="left:384px; top:144px;" class="imglnk" href="#" onclick="ajaxEnvia('P9', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="13" onfocus="obj=this;" style="left:408px; top:144px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:88px;top:160px;width:160px;">Pallet:</div>
+<input name="t_pallet" num="1" exc="1" id="t_pallet" value="" maxlength="9" style="left:256px;top:160px;width:120px;">
+<a id="14" onfocus="obj=this;" style="left:384px; top:160px;" class="imglnk" href="#" onclick="ajaxEnvia('P10', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="15" onfocus="obj=this;" style="left:408px; top:160px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:88px;top:176px;width:160px;">CTRC&nbsp;Origem:</div>
+<input name="t_ctrc_orig" num="1" exc="1" id="t_ctrc_orig" value="" maxlength="9" style="left:256px;top:176px;width:120px;">
+<a id="16" onfocus="obj=this;" style="left:384px; top:176px;" class="imglnk" href="#" onclick="ajaxEnvia('P5', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="17" onfocus="obj=this;" style="left:408px; top:176px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:168px;top:192px;width:80px;">N°&nbsp;Pedido:</div>
+<input name="t_nro_pedido" exc="1" id="t_nro_pedido" value="" maxlength="50" style="left:256px;top:192px;width:120px;">
+<a id="18" onfocus="obj=this;" style="left:384px; top:192px;" class="imglnk" href="#" onclick="ajaxEnvia('P6', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="19" onfocus="obj=this;" style="left:408px; top:192px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:56px;top:208px;width:192px;">Valor&nbsp;do&nbsp;frete:</div>
+<input name="t_vlr_frete" exc="1" id="t_vlr_frete" cep="2" ces="6" currencyedit="true" value="" maxlength="12" style="left: 256px; top: 208px; width: 120px; text-align: right;" currencyvalue="0">
+<a id="20" onfocus="obj=this;" style="left:384px; top:208px;" class="imglnk" href="#" onclick="ajaxEnvia('VLR_FRT', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="21" onfocus="obj=this;" style="left:408px; top:208px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:56px;top:224px;width:192px;">Protocolo&nbsp;WebService:</div>
+<input name="t_protocolo" id="t_protocolo" value="" maxlength="30" style="left:256px;top:224px;width:120px;">
+<a id="22" onfocus="obj=this;" style="left:384px; top:224px;" class="imglnk" href="#" onclick="ajaxEnvia('PROT', 0);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="23" onfocus="obj=this;" style="left:408px; top:224px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:88px;top:256px;width:160px;">Período&nbsp;de&nbsp;pesquisa:</div>
+<input name="t_data_ini" num="1" dt="1" id="t_data_ini" value="020325" maxlength="6" style="left: 256px; top: 256px; width: 48px; background: white;">
+<div class="texto" style="text-align:left;left:312px;top:256px;">a</div>
+<input name="t_data_fin" num="1" dt="1" id="t_data_fin" value="310525" maxlength="6" style="left:328px;top:256px;width:48px;">
+<a id="24" onfocus="obj=this;" style="left:384px; top:256px;" class="imglnk" href="#" onclick="ajaxEnvia('P', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="25" onfocus="obj=this;" style="left:408px; top:256px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<div class="texto" style="left:8px;top:288px;width:240px;">Código&nbsp;de&nbsp;barras:</div>
+<input name="t_cod_barras" id="t_cod_barras" value="" maxlength="44" style="left:256px;top:288px;width:304px;">
+<a id="26" onfocus="obj=this;" style="left:568px; top:288px;" class="imglnk" href="#" onclick="ajaxEnvia('BAR', 1);return false;" accesskey="&amp;">&nbsp;►&nbsp;</a>
+<a href="#" id="btn_fec_cod_barras" onfocus="obj=this;" style="left:592px; top:288px;" class="imglnk" onclick="btnClose();return false;" accesskey="&amp;">&nbsp;×&nbsp;</a>
+<a id="lnk_ssw1102_cng" onfocus="obj=this;" class="baselnk" href="#" onclick="ajaxEnvia('', 1, 'ssw1102?act=CTRC');return false;" accesskey="&amp;" style="position: absolute; left:776px;text-align:left; top:64px;">WS&nbsp;-&nbsp;CTRCs&nbsp;não&nbsp;gerados</a>
+<input type="hidden" name="act">
+<input type="hidden" name="data_ini_inf" id="data_ini_inf" value="30%2F12%2F99">
+<input type="hidden" name="data_fin_inf" id="data_fin_inf" value="30%2F12%2F99">
+<input type="hidden" name="seq_ctrc" id="seq_ctrc" value="0">
+<input type="hidden" name="local" id="local" value="">
+<input type="hidden" name="FAMILIA" id="FAMILIA" value="">
+<script id="mainscript" type="text/javascript"><!--
+objfocus = "t_ser_ctrc";
+objmais   = "20";
+help_file = "ssw0053.htm";
+--></script>
+<div style="left:0px;top:320px;">&nbsp;</div>
+</form>
+<div class="cabecalho">&nbsp;
+<div id="infodiv" class="texto3" style="left:8px;bottom:8px;"><span style="color: rgb(245,245,255)">Domínio: <b>BIN</b></span><b>&nbsp;SPO&nbsp;thiago&nbsp;08</b></div>
+<div id="telaprog" class="texto3" style="right:8px;bottom:24px;color:silver;overflow:visible">ssw0053.01&nbsp;31/05/25&nbsp;18:52</div>
+<div id="cablnk" style="right:8px;bottom:8px;"><a class="cablnk" href="#" onclick="window.print(); return false;">Imprimir</a>&nbsp;&nbsp;&nbsp;<a class="cablnk" href="#" onclick="envia3('', 1, 'ssw1243');return false;">E-mails/fones</a>&nbsp;&nbsp;&nbsp;<a class="cablnk" href="#" onclick="envia3('', 1, 'ssw0187'); return false;">Correio</a>&nbsp;&nbsp;&nbsp;<a class="cablnk" href="#" onclick="showhelp(1, '/ajuda/' + help_file);return false;"><big><b> ? </b></big></a></div>
+<div class="tituloprog" id="tituloprog"><a class="tituloprog" href="/bin/menu01">SSW</a>&nbsp;/&nbsp;<a class="tituloprog" href="#" help="A0002" onclick="TitleMenu01Click(this, 2);return false;">Cliente</a> / <a class="tituloprog" href="#" help="B00020001" onclick="TitleMenu02Click(this, 2,1);return false">Situação</a> / <span class="titulo">101 - Situação do CTRC</span></div>
+</div>
+<div id="errorpanel" style="text-align: left; overflow: visible; left: 0px; top: 0px; height: 613px; width: 1350px; background: white; opacity: 0.5; visibility: hidden; z-index: 1147483607;">
+</div>
+<div id="errormsg" style="text-align:left;overflow:visible;left:185px;top:100px;height:120px;width:400px;
+visibility:hidden;z-index:1147483648;">
+&nbsp;
+</div>
+<div id="procimg" style="position: absolute; left: 400px; top: 208px; width: 200px; height: 100px; visibility: hidden; overflow: visible; background: white; z-index: 1147483649;">
+<img src="/images/ajax-loader2.gif" style="position:absolute;left:92px;top:32px;"><br>
+<label class="texto" style="color:red;font-size:8pt;top:56px;left:72px;">Aguarde ...</label>
+<div id="id_progressoSSW" class="progressoSSW"></div>
+</div>
+
+<iframe name="dframe" id="dframe" style="position:absolute;left:10px;top:50px;height:50px;width:50px;visibility:hidden;"></iframe>
+
+</body></html>

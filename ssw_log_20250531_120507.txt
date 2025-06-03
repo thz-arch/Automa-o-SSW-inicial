@@ -1,0 +1,58 @@
+2025-05-31 12:05:07,195 - INFO - Log salvo em ssw_log_20250531_120507.txt
+2025-05-31 12:05:07,196 - INFO - ====== WebDriver manager ======
+2025-05-31 12:05:09,595 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 12:05:09,678 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 12:05:09,711 - INFO - Driver [C:\Users\057-PC\.wdm\drivers\edgedriver\win64\132.0.2957.178\msedgedriver.exe] found in cache
+2025-05-31 12:05:12,862 - INFO - Abrindo a página de login...
+2025-05-31 12:05:13,888 - INFO - Preenchendo campos de login...
+2025-05-31 12:05:13,888 - INFO - Preenchendo campo 1...
+2025-05-31 12:05:13,936 - INFO - Preenchendo campo 2...
+2025-05-31 12:05:13,994 - INFO - Preenchendo campo 3...
+2025-05-31 12:05:14,007 - INFO - Preenchendo campo 4...
+2025-05-31 12:05:14,038 - INFO - Clicando no botão de login...
+2025-05-31 12:05:16,102 - INFO - Login realizado! Redirecionando para a aba menu...
+2025-05-31 12:05:16,304 - INFO - Preenchendo campo de tela com "101"...
+2025-05-31 12:05:16,317 - INFO - Campo de tela preenchido com sucesso!
+2025-05-31 12:05:16,318 - INFO - Aguardando redirecionamento para a tela 101...
+2025-05-31 12:05:16,857 - INFO - Redirecionado para nova janela/aba da tela 101!
+2025-05-31 12:05:16,863 - INFO - Aguardando campo de data inicial (t_data_ini)...
+2025-05-31 12:05:16,897 - INFO - Campo de data inicial encontrado!
+2025-05-31 12:05:16,897 - INFO - Preenchendo campo de data inicial com "010623"...
+2025-05-31 12:05:16,911 - INFO - Campo de data inicial preenchido!
+2025-05-31 12:05:16,913 - INFO - Aguardando campo de nota fiscal (t_nro_nf)...
+2025-05-31 12:05:16,976 - INFO - Campo de nota fiscal encontrado!
+2025-05-31 12:05:16,977 - INFO - Preenchendo campo de nota fiscal com "314638"...
+2025-05-31 12:05:16,989 - INFO - Campo de nota fiscal preenchido!
+2025-05-31 12:05:16,990 - INFO - Aguardando botão de busca (id=4)...
+2025-05-31 12:05:17,021 - INFO - Botão de busca encontrado!
+2025-05-31 12:05:17,021 - INFO - Clicando no botão de busca...
+2025-05-31 12:05:17,106 - INFO - Botão de busca clicado!
+2025-05-31 12:05:18,196 - INFO - Foco alterado para a janela de detalhe da nota!
+2025-05-31 12:05:18,305 - ERROR - Erro ao interagir na tela de ocorrências: Message: javascript error: Cannot read properties of null (reading 'scrollIntoView')
+  (Session info: MicrosoftEdge=132.0.2957.140)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65D1C0AC5+13637]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF65D44BBB4+2078836]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF65D3A66B6+1401718]
+	(No symbol) [0x00007FF65CF3B350]
+	(No symbol) [0x00007FF65CF3DD93]
+	(No symbol) [0x00007FF65CFB9576]
+	(No symbol) [0x00007FF65CF9DDCA]
+	(No symbol) [0x00007FF65CF73DA7]
+	(No symbol) [0x00007FF65CFB88FD]
+	(No symbol) [0x00007FF65CF9DA33]
+	(No symbol) [0x00007FF65CF732F4]
+	(No symbol) [0x00007FF65CF72626]
+	(No symbol) [0x00007FF65CF72EE1]
+	(No symbol) [0x00007FF65CFFE194]
+	(No symbol) [0x00007FF65D0A607F]
+	(No symbol) [0x00007FF65D001B83]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF65D5081A9+269801]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF65D157181+519345]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF65D152474+499620]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF65D1525B9+499945]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF65D147536+454758]
+	BaseThreadInitThunk [0x00007FFBCF497374+20]
+	RtlUserThreadStart [0x00007FFBD0ABCC91+33]
+
+2025-05-31 12:05:18,314 - INFO - Processando nota: 314638

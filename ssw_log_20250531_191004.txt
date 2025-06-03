@@ -1,0 +1,137 @@
+2025-05-31 19:10:04,475 - INFO - Log salvo em ssw_log_20250531_191004.txt
+2025-05-31 19:10:04,478 - INFO - ====== WebDriver manager ======
+2025-05-31 19:10:07,972 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 19:10:08,089 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 19:10:08,128 - INFO - Driver [C:\Users\057-PC\.wdm\drivers\edgedriver\win64\132.0.2957.178\msedgedriver.exe] found in cache
+2025-05-31 19:10:17,988 - INFO - Abrindo a página de login...
+2025-05-31 19:10:20,891 - INFO - Preenchendo campos de login...
+2025-05-31 19:10:20,892 - INFO - Preenchendo campo 1...
+2025-05-31 19:10:20,910 - INFO - Preenchendo campo 2...
+2025-05-31 19:10:20,917 - INFO - Preenchendo campo 3...
+2025-05-31 19:10:20,931 - INFO - Preenchendo campo 4...
+2025-05-31 19:10:20,949 - INFO - Clicando no botão de login...
+2025-05-31 19:10:22,953 - INFO - Login realizado! Redirecionando para a aba menu...
+2025-05-31 19:10:22,991 - INFO - Preenchendo campo de tela com "101"...
+2025-05-31 19:10:23,001 - INFO - Campo de tela preenchido com sucesso!
+2025-05-31 19:10:23,001 - INFO - Aguardando redirecionamento para a tela 101...
+2025-05-31 19:10:23,520 - INFO - Redirecionado para nova janela/aba da tela 101!
+2025-05-31 19:10:23,521 - INFO - Aguardando campo de data inicial (t_data_ini)...
+2025-05-31 19:10:23,570 - INFO - Campo de data inicial encontrado!
+2025-05-31 19:10:23,570 - INFO - Preenchendo campo de data inicial com "010623"...
+2025-05-31 19:10:23,581 - INFO - Campo de data inicial preenchido!
+2025-05-31 19:10:23,581 - INFO - Aguardando campo de nota fiscal (t_nro_nf)...
+2025-05-31 19:10:23,611 - INFO - Campo de nota fiscal encontrado!
+2025-05-31 19:10:23,616 - INFO - Preenchendo campo de nota fiscal com "10040"...
+2025-05-31 19:10:23,631 - INFO - Campo de nota fiscal preenchido!
+2025-05-31 19:10:23,631 - INFO - Aguardando botão de busca (id=4)...
+2025-05-31 19:10:23,657 - INFO - Botão de busca encontrado!
+2025-05-31 19:10:23,658 - INFO - Clicando no botão de busca...
+2025-05-31 19:10:23,732 - INFO - Botão de busca clicado!
+2025-05-31 19:10:24,253 - INFO - Foco alterado para a nova janela/aba da tela intermediária! Título: 101 - Situação do CTRC :: SSW Sistema de Transportes
+2025-05-31 19:10:24,360 - INFO - Linhas CTRC encontradas (qtd=4):
+2025-05-31 19:10:24,381 - INFO - Linha 0: Domínio
+CTRC
+Coleta
+Emissão
+Remetente
+Cidade
+Pagador
+Destinatário
+Cidade
+Peso Kg
+Frete
+CT-e
+Cancelado
+2025-05-31 19:10:24,413 - INFO - Linha 1: BIN
+GYN054779-4
+NORMAL
+26/05/25
+RENOVA COM DE PROD DE USO PESS
+GO / GOIANIA
+RENOVA COMERCIO DE PRODUTOS DE
+RENOVA COMERCIO DE PRODUTOS DE
+SP / SAO PAULO
+8.584,90
+8.321,66
+004-000051873
+ 
+2025-05-31 19:10:24,452 - INFO - Linha 2: BIN
+GYN039632-0
+NORMAL
+16/06/23
+PRIME DISTRIBUIDORA DE EMBALAG
+GO / GOIANIA
+PRIME DISTRIBUIDORA DE EMBALAG
+ELIZABETE PERREIRA
+PA / BRASIL NOVO
+55,55
+154,99
+004-000037163
+ 
+2025-05-31 19:10:24,477 - INFO - Linha 3:    ×   
+2025-05-31 19:10:24,478 - INFO - Tela intermediária detectada: 4 CTRCs. Selecionando o de maior frete.
+2025-05-31 19:10:24,528 - WARNING - Erro ao converter valor de frete 'Emissão': could not convert string to float: ''
+2025-05-31 19:10:24,544 - WARNING - Erro ao processar linha 0: Message: no such element: Unable to locate element: {"method":"css selector","selector":"a.sra2"}
+  (Session info: MicrosoftEdge=132.0.2957.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C2AC0AC5+13637]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7C2D4BBB4+2078836]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7C2CA66B6+1401718]
+	(No symbol) [0x00007FF7C287D83C]
+	(No symbol) [0x00007FF7C287D9FB]
+	(No symbol) [0x00007FF7C2873DFC]
+	(No symbol) [0x00007FF7C289DE0F]
+	(No symbol) [0x00007FF7C2873DA7]
+	(No symbol) [0x00007FF7C2873C6D]
+	(No symbol) [0x00007FF7C289E0B0]
+	(No symbol) [0x00007FF7C2873DA7]
+	(No symbol) [0x00007FF7C28B88FD]
+	(No symbol) [0x00007FF7C289DA33]
+	(No symbol) [0x00007FF7C28732F4]
+	(No symbol) [0x00007FF7C2872626]
+	(No symbol) [0x00007FF7C2872EE1]
+	(No symbol) [0x00007FF7C28FE194]
+	(No symbol) [0x00007FF7C29A607F]
+	(No symbol) [0x00007FF7C2901B83]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C2E081A9+269801]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A57181+519345]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A52474+499620]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A525B9+499945]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A47536+454758]
+	BaseThreadInitThunk [0x00007FFBCF497374+20]
+	RtlUserThreadStart [0x00007FFBD0ABCC91+33]
+
+2025-05-31 19:10:24,599 - INFO - Linha 1: Frete=260525.0, Link=BIN
+2025-05-31 19:10:24,639 - INFO - Linha 2: Frete=160623.0, Link=BIN
+2025-05-31 19:10:24,647 - WARNING - Erro ao processar linha 3: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.srdvr"}
+  (Session info: MicrosoftEdge=132.0.2957.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C2AC0AC5+13637]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7C2D4BBB4+2078836]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7C2CA66B6+1401718]
+	(No symbol) [0x00007FF7C287D83C]
+	(No symbol) [0x00007FF7C287D9FB]
+	(No symbol) [0x00007FF7C2873DFC]
+	(No symbol) [0x00007FF7C289DE0F]
+	(No symbol) [0x00007FF7C2873DA7]
+	(No symbol) [0x00007FF7C2873C6D]
+	(No symbol) [0x00007FF7C289E0B0]
+	(No symbol) [0x00007FF7C2873DA7]
+	(No symbol) [0x00007FF7C28B88FD]
+	(No symbol) [0x00007FF7C289DA33]
+	(No symbol) [0x00007FF7C28732F4]
+	(No symbol) [0x00007FF7C2872626]
+	(No symbol) [0x00007FF7C2872EE1]
+	(No symbol) [0x00007FF7C28FE194]
+	(No symbol) [0x00007FF7C29A607F]
+	(No symbol) [0x00007FF7C2901B83]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C2E081A9+269801]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A57181+519345]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A52474+499620]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A525B9+499945]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A47536+454758]
+	BaseThreadInitThunk [0x00007FFBCF497374+20]
+	RtlUserThreadStart [0x00007FFBD0ABCC91+33]
+
+2025-05-31 19:10:24,650 - INFO - Valores de frete encontrados: [0, 260525.0, 160623.0]
+2025-05-31 19:10:24,727 - INFO - Linha de maior valor de frete (260525.0) selecionada (click no link).

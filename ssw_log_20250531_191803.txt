@@ -1,0 +1,81 @@
+2025-05-31 19:18:03,398 - INFO - Log salvo em ssw_log_20250531_191803.txt
+2025-05-31 19:18:03,400 - INFO - ====== WebDriver manager ======
+2025-05-31 19:18:05,666 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 19:18:06,422 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 19:18:06,467 - INFO - Driver [C:\Users\057-PC\.wdm\drivers\edgedriver\win64\132.0.2957.178\msedgedriver.exe] found in cache
+2025-05-31 19:18:13,395 - INFO - Abrindo a página de login...
+2025-05-31 19:18:15,675 - INFO - Preenchendo campos de login...
+2025-05-31 19:18:15,675 - INFO - Preenchendo campo 1...
+2025-05-31 19:18:15,685 - INFO - Preenchendo campo 2...
+2025-05-31 19:18:15,694 - INFO - Preenchendo campo 3...
+2025-05-31 19:18:15,720 - INFO - Preenchendo campo 4...
+2025-05-31 19:18:15,736 - INFO - Clicando no botão de login...
+2025-05-31 19:18:16,611 - INFO - Login realizado! Redirecionando para a aba menu...
+2025-05-31 19:18:16,644 - INFO - Preenchendo campo de tela com "101"...
+2025-05-31 19:18:16,651 - INFO - Campo de tela preenchido com sucesso!
+2025-05-31 19:18:16,651 - INFO - Aguardando redirecionamento para a tela 101...
+2025-05-31 19:18:17,174 - INFO - Redirecionado para nova janela/aba da tela 101!
+2025-05-31 19:18:17,176 - INFO - Aguardando campo de data inicial (t_data_ini)...
+2025-05-31 19:18:17,222 - INFO - Campo de data inicial encontrado!
+2025-05-31 19:18:17,222 - INFO - Preenchendo campo de data inicial com "010623"...
+2025-05-31 19:18:17,237 - INFO - Campo de data inicial preenchido!
+2025-05-31 19:18:17,237 - INFO - Aguardando campo de nota fiscal (t_nro_nf)...
+2025-05-31 19:18:17,270 - INFO - Campo de nota fiscal encontrado!
+2025-05-31 19:18:17,272 - INFO - Preenchendo campo de nota fiscal com "10040"...
+2025-05-31 19:18:17,285 - INFO - Campo de nota fiscal preenchido!
+2025-05-31 19:18:17,286 - INFO - Aguardando botão de busca (id=4)...
+2025-05-31 19:18:17,313 - INFO - Botão de busca encontrado!
+2025-05-31 19:18:17,314 - INFO - Clicando no botão de busca...
+2025-05-31 19:18:17,396 - INFO - Botão de busca clicado!
+2025-05-31 19:18:17,924 - INFO - Foco alterado para a nova janela/aba da tela intermediária! Título: 101 - Situação do CTRC :: SSW Sistema de Transportes
+2025-05-31 19:18:18,030 - INFO - Linhas CTRC encontradas (qtd=4):
+2025-05-31 19:18:18,050 - INFO - Linha 0: Domínio
+CTRC
+Coleta
+Emissão
+Remetente
+Cidade
+Pagador
+Destinatário
+Cidade
+Peso Kg
+Frete
+CT-e
+Cancelado
+2025-05-31 19:18:18,083 - INFO - Linha 1: BIN
+GYN054779-4
+NORMAL
+26/05/25
+RENOVA COM DE PROD DE USO PESS
+GO / GOIANIA
+RENOVA COMERCIO DE PRODUTOS DE
+RENOVA COMERCIO DE PRODUTOS DE
+SP / SAO PAULO
+8.584,90
+8.321,66
+004-000051873
+ 
+2025-05-31 19:18:18,117 - INFO - Linha 2: BIN
+GYN039632-0
+NORMAL
+16/06/23
+PRIME DISTRIBUIDORA DE EMBALAG
+GO / GOIANIA
+PRIME DISTRIBUIDORA DE EMBALAG
+ELIZABETE PERREIRA
+PA / BRASIL NOVO
+55,55
+154,99
+004-000037163
+ 
+2025-05-31 19:18:18,149 - INFO - Linha 3:    ×   
+2025-05-31 19:18:18,149 - INFO - Tela intermediária detectada: 4 CTRCs. Selecionando o de maior frete.
+2025-05-31 19:18:18,285 - INFO - Linha 0 ignorada (sem link BIN ou colunas insuficientes).
+2025-05-31 19:18:18,340 - INFO - Linha 1: Frete=8321.66, Link=BIN
+2025-05-31 19:18:18,386 - INFO - Linha 2: Frete=154.99, Link=BIN
+2025-05-31 19:18:18,411 - INFO - Linha 3 ignorada (sem link BIN ou colunas insuficientes).
+2025-05-31 19:18:18,411 - INFO - Valores de frete encontrados: [8321.66, 154.99]
+2025-05-31 19:18:18,489 - INFO - Linha de maior valor de frete (8321.66) selecionada (click no link).
+2025-05-31 19:18:30,600 - ERROR - Erro ao tentar selecionar a nota de maior valor de frete: Message: 
+
+2025-05-31 19:18:30,601 - ERROR - Não foi possível clicar na nota de maior valor. Abortando antes de abrir ocorrências.

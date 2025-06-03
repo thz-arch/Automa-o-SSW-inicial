@@ -1,0 +1,56 @@
+2025-05-31 15:17:34,488 - INFO - Log salvo em ssw_log_20250531_151734.txt
+2025-05-31 15:17:34,489 - INFO - ====== WebDriver manager ======
+2025-05-31 15:17:37,235 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 15:17:37,370 - INFO - Get LATEST edgedriver version for Edge 132.0.2957
+2025-05-31 15:17:37,405 - INFO - Driver [C:\Users\057-PC\.wdm\drivers\edgedriver\win64\132.0.2957.178\msedgedriver.exe] found in cache
+2025-05-31 15:17:45,107 - INFO - Abrindo a página de login...
+2025-05-31 15:17:48,363 - INFO - Preenchendo campos de login...
+2025-05-31 15:17:48,364 - INFO - Preenchendo campo 1...
+2025-05-31 15:17:48,372 - INFO - Preenchendo campo 2...
+2025-05-31 15:17:48,443 - INFO - Preenchendo campo 3...
+2025-05-31 15:17:48,450 - INFO - Preenchendo campo 4...
+2025-05-31 15:17:48,464 - INFO - Clicando no botão de login...
+2025-05-31 15:17:49,165 - INFO - Login realizado! Redirecionando para a aba menu...
+2025-05-31 15:17:50,626 - INFO - Preenchendo campo de tela com "101"...
+2025-05-31 15:17:50,640 - INFO - Campo de tela preenchido com sucesso!
+2025-05-31 15:17:50,640 - INFO - Aguardando redirecionamento para a tela 101...
+2025-05-31 15:17:52,538 - INFO - Redirecionado para nova janela/aba da tela 101!
+2025-05-31 15:17:52,538 - INFO - Aguardando campo de data inicial (t_data_ini)...
+2025-05-31 15:17:52,567 - INFO - Campo de data inicial encontrado!
+2025-05-31 15:17:52,567 - INFO - Preenchendo campo de data inicial com "010623"...
+2025-05-31 15:17:52,580 - INFO - Campo de data inicial preenchido!
+2025-05-31 15:17:52,580 - INFO - Aguardando campo de nota fiscal (t_nro_nf)...
+2025-05-31 15:17:52,609 - INFO - Campo de nota fiscal encontrado!
+2025-05-31 15:17:52,609 - INFO - Preenchendo campo de nota fiscal com "1053168"...
+2025-05-31 15:17:52,619 - INFO - Campo de nota fiscal preenchido!
+2025-05-31 15:17:52,619 - INFO - Aguardando botão de busca (id=4)...
+2025-05-31 15:17:52,642 - INFO - Botão de busca encontrado!
+2025-05-31 15:17:52,642 - INFO - Clicando no botão de busca...
+2025-05-31 15:17:52,706 - INFO - Botão de busca clicado!
+2025-05-31 15:17:53,723 - INFO - Foco alterado para a janela de detalhe da nota!
+2025-05-31 15:17:59,494 - INFO - Ocorrência "96" enviada no campo código!
+2025-05-31 15:18:18,054 - ERROR - Erro ao finalizar ocorrência: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=132.0.2957.140)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C2AC0AC5+13637]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7C2D4BBB4+2078836]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7C2CA66B6+1401718]
+	(No symbol) [0x00007FF7C2817A27]
+	(No symbol) [0x00007FF7C28A39C5]
+	(No symbol) [0x00007FF7C28B83EA]
+	(No symbol) [0x00007FF7C289DA33]
+	(No symbol) [0x00007FF7C28732F4]
+	(No symbol) [0x00007FF7C2872626]
+	(No symbol) [0x00007FF7C2872EE1]
+	(No symbol) [0x00007FF7C28FE194]
+	(No symbol) [0x00007FF7C29A607F]
+	(No symbol) [0x00007FF7C2901B83]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7C2E081A9+269801]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A57181+519345]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A52474+499620]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A525B9+499945]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7C2A47536+454758]
+	BaseThreadInitThunk [0x00007FFBCF497374+20]
+	RtlUserThreadStart [0x00007FFBD0ABCC91+33]
+
